@@ -217,9 +217,9 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'tnd_n_enma',
-      'username' => 'root',
-      'password' => '',
+      'database' => 'u322517513_enigm',
+      'username' => 'u322517513_enigm',
+      'password' => 'nandito2007',
       'host' => 'localhost',
       'port' => '',
       'driver' => 'mysql',
