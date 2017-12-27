@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Enigma Drupal Documentation</title>
+<!-- Mobile viewport optimized -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!-- Mobile Internet Explorer allows us to activate ClearType technology for smoothing fonts for easy reading -->
+<meta http-equiv="cleartype" content="on">
+<!-- Le styles -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/themes/black-tie/jquery-ui.css" rel="stylesheet">
+<link href="css/jquery.tocify.css" rel="stylesheet">
+<link href="css/prettify.css" type="text/css" rel="stylesheet" />
+<link href="css/styles.css" type="text/css" rel="stylesheet" />
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<!-- Le fav and touch icons -->
+<link rel="shortcut icon" href="../assets/ico/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+<style>
+@media (max-width: 767px) {
+ #toc {
+ position: relative;
+ width: 100%;
+ margin: 0px 0px 20px 0px;
+}
+}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container-fluid"><a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="#">Home
+Custom Build</a>
+			<div class="nav-collapse">
+				<ul class="nav">
+					<li class="active"><a href="index.html">Home</a></li>
+				</ul>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</div>
+<div class="container-fluid">
+<div class="row-fluid">
+	<div class="span3 tocify">
+		<div id="toc"></div>
+		<!--/.well -->
+	</div>
+	<!--/span-->
+	<div class="span9">
+		<div class="hero-unit">
+			<h1>Enigma Documentation</h1>
+			<br />
+			<br />
+			<h2>Description</h2>
+			<p>Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/drupalet" target="_blank">here</a>. Thanks so much!</p>
+			
+			
+		</div>
+		<hr/>
+		<h2><a>Installing The Theme</a></h2>
+		<br />
+		<p class="well"> 
+		There are 2 ways to install :</p>
+			<ul>
+				<li>Fresh installation.</li>
+				<li>Install on Existing Drupal core</li>
+			</ul>
+
+		<p>Log into your site via FTP . (if you don't have any FTP program you can use <a href="http://filezilla-project.org/">FileZilla</a> , it's free).</p>
+		<p>&nbsp;</p>
+		
+		<h3><p><strong>1. Fresh installation.</strong></p></h3>
+		<ul>
+			<li>Upload <strong>Fresh_installation.zip</strong> to your domain directory and unzip it.</li>
+			<li>Import file "<strong>database/sample_data.sql</strong>" to phpMyadmin (http://localhost/phpmyadmin/ of http://your_website.com/phpmyadmin)</li>
+			<li>Edit file "sites/default/settings.php". <br/>
+				$databases = array (<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'default' =&gt; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array (<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'default' =&gt; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array (<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'database' =&gt; <strong>DATABASE_NAME</strong>',<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'username' =&gt; <strong>MY_USERNAME</strong>',<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'password' =&gt; '<strong>MY_PASSWORD</strong>',<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'host' =&gt; 'localhost',<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'port' =&gt; '',<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'driver' =&gt; 'mysql',<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'prefix' =&gt; '',<br>
+),<br>
+),<br>
+);</li>
+
+		<li>Done! Now, go to your website.</li>
+		<li>Username and Password: <br/>
+		- <strong>User:</strong> "admin"<br/>
+		- <strong>Password:</strong> "admin"</li>
+</ul>
+		<p>&nbsp;</p>
+		<h3><p><strong>2. Install on Existing Drupal core</strong></p></h3>
+		<ul>
+			<li>Login to your Drupal site</li>
+			<li>Upload<strong> theme/enma</strong> to <strong>themes</strong> directory in /sites/all/themes/</li>
+			<li>Upload <strong>modules/</strong> to <strong>modules</strong> directory in /sites/all/modules/</li>
+			<li>Upload <strong>libraries/</strong> to <strong>libraries</strong> directory in /sites/all/libraries/</li>
+			
+			<li>In Drupal Admin , Appearance and set <strong>Enigma (enma)</strong> as a default theme, and active all uploaded modules.</li>
+		</ul><br>
+
+		<hr/><br>
+
+		
+<h2><a>Setting Media <span style="color:#F00">(IMPORTANT)</span></a></h2><br>
+
+<h3>1. Adding : <span class="red">Image 359x206</span>.</h3>
+<p><strong>Step 1.</strong> In Admin menu, go to: <strong>Configuration</strong> -> <strong>Image styles </strong>-> <strong>Add style</strong></p>
+<img src="demo-image/49.PNG" ><br>
+<br>
+
+<p><strong>Step 2.</strong> In Popup window, enter "<span class="red">Image 359x206</span>" to Style name. and click <strong>Create new style</strong></p>
+<p><strong>Step 3.</strong> Look at the following image for the configuration. after done setting, hit <strong>Add</strong></p>
+<img src="demo-image/500.PNG" ><br/><br/>
+
+<p><strong>Step 4.</strong> Enter width & height (359x206) then hit <strong>Add effect</strong> to save the settings:</p>
+<br/>
+
+<h4>- Repeat the above steps for the "image style" as the image below.</h4>
+<p><img src="demo-image/500-1.PNG" ></p>
+
+<hr>
+<h2><a>Adding Taxonomy Vocabulary</a></h2><br><br>
+
+<h3>1. Adding <strong>"Categories"</strong> vocabulary taxonomy.</h3>
+<p>- In Admin menu, click <strong>Structure </strong>-> <strong>Taxonomy </strong>-> <strong>Add vocabulary</strong></p>
+<p><img src="demo-image/51.PNG"></p>
+<p>&nbsp;</p>
+<p>- Enter these fields as a following image. Then hit <strong>Save</strong></p>
+<p><strong><em>Note: Machine name</em></strong><em> must be <strong>"categories</strong>"</em></p>
+<img src="demo-image/52.PNG">
+
+<br/>
+<h3>2. Adding <strong>"Portfolio categories"</strong> vocabulary taxonomy.</h3>
+<p>- In Admin menu, click <strong>Structure </strong>-> <strong>Taxonomy </strong>-> <strong>Add vocabulary</strong></p>
+<p><img src="demo-image/51.PNG"></p>
+<p>&nbsp;</p>
+<p>- Enter these fields as a following image. Then hit <strong>Save</strong></p>
+<p><strong><em>Note: Machine name</em></strong><em> must be <strong>"portfolio_categories</strong>"</em></p>
+<img src="demo-image/52-3.PNG">
+
+
+<br/>
+
+<hr><br>
+
+<h2><a>Manage menu</a></h2>
+<p>&nbsp;</p>
+<h3><strong>1. Manage Main menu</strong></h3>
+<p>- In Admin Menu click: <strong>Structure </strong>-&gt; <strong>Blocks</strong>.</p>
+<p>- Re-select <strong>REGION</strong> for <strong>Main menu</strong> block : "<strong>Main menu</strong>" as a following image. and click <strong>Save blocks</strong> .</p>
+<p><strong>Note: </strong>Remove <strong>Main menu block title.</strong></p>
+<img src="demo-image/55.PNG">
+<br>
+
+<br/>
+<hr>
+<h2><a>Manage content type</a></h2><br>
+
+<h3>1. Article (Machine name: article)</h3>
+<br>
+<img src="demo-image/61.PNG">
+<br><br>
+
+<h3>Basic page (Machine name: page)</h3>
+<img src="demo-image/83-33.PNG">
+<br><br>
+
+<br><br>
+<h3>Blog entry (Machine name: blog)	</h3>
+<img src="demo-image/83-3.PNG">
+<br><br>
+<h3>Clients (Machine name: clients)</h3>
+<img src="demo-image/83-4.PNG">
+<br><br>
+
+<h3>Features (Machine name: features)</h3>
+<img src="demo-image/83-5.PNG">
+<br><br>
+<h3>Homepage (Machine name: homepage)</h3>
+<img src="demo-image/83-6.PNG">
+<br><br>
+<h3>Nodeblock (Machine name: nodeblock)</h3>
+<img src="demo-image/83-12.PNG">
+<br><br>
+<h3>Portfolio (Machine name: portfolio)</h3>
+<img src="demo-image/83-13.PNG">
+<br><br>
+
+<h3>Promotion (Machine name: promotion)</h3>
+<img src="demo-image/83-14.PNG">
+<br><br>
+<h3>Results (Machine name: results)</h3>
+<img src="demo-image/83-15.PNG">
+<br><br>
+
+<h3>Services (Machine name: services)</h3>
+<img src="demo-image/83-16.PNG">
+<br><br>
+<h3>Skills (Machine name: skills)</h3>
+<img src="demo-image/83-17.PNG">
+<br>
+<br>
+<h3>Testimonials (Machine name: testimonials)</h3>
+<img src="demo-image/83-19.PNG">
+<br>
+<br>
+
+<h3>Webform (Machine name: webform)</h3>
+<img src="demo-image/83-22.PNG">
+<br><br>
+
+
+
+<hr><br>
+
+<br>
+
+<h2><a>Contexts</a></h2>
+<p>The Enigma theme utilizes the Context module to control the homepage content, blocks, menus, and global elements such as header or footer regions...</p>
+
+<p>To add a new context or modify an existing context, navigate to Structure > Context and locate the appropriate option.</p>
+<br/>
+<img src="demo-image/88.PNG">
+<br/><br/>
+<p>All block and menu trail configuration settings which came packaged in the Enigma: Features module are contained in the context definitions above. Creating/modifying contexts is simple! Each context arguement is comprised of two parts: conditions and reactions.</p>
+<p>Example: A block titled NEW_BLOCK has been created and needs to be placed in the second sidebar region on blog posts.</p>
+<p>
+<ul>
+	<li>Condition: Node Type = Blog Post</li>
+	<li>Reaction: Blocks > Sidebar Second = NEW_BLOCK</li>
+</ul>
+</p>
+<p>The above arguement will result in NEW_BLOCK appearing in the second sidebar region on all pages of the blog post content type. Context conditions can be based on several options such content types, path, taxonomy terms, and user roles.</p>
+<p>Although a multitude of reaction options also exist, Enigma only uses the block and menu reactions in the preconfigured theme settings. Please modify the appropriate context definition if the need to disable the preconfigured block/menu settings arise.</p>
+
+<br/><br/>
+<h2><a>Blocks</a></h2>
+
+<h3>Creating a Block</h3>
+<p>Blocks can be added/modified by navigating to Structure > Blocks > Add Block in the Drupal administrative interface. Each block can hold plain text or full HTML markup and be used on multiple pages of your website. Using a block is highly recommended when an element needs to be used on multiple pages. Make sure you check the filter settings if HTML is needed.</p>
+<h3>Editing a Block</h3>
+<p>Blocks can be edited by navigating to Structure > Blocks in the Drupal administration interface, or by hovering over a block on the page and clicking the Edit block link. CSS classes can also be added to each block on the edit block page.</p>
+
+<h3>Placing Blocks in a Region</h3>
+<p>Blocks can be placed in regions by utilizing the "drag and drop" interface found at Structure > Blocks or on the block edit page:</p>
+<img src="demo-image/88-11.PNG">
+<h3>Limiting Blocks to Specific Pages</h3>
+<p>To place a block on a specific page, or multiple pages, navigate to Structure > Blocks in the Drupal administration interface and click the configure link next to the block you are editing. </p>
+
+<p>Locate the Pages tab at the bottom of the page. Here you can specify the address to each page you wish to include or disclude each respective block on.</p>
+
+<p>Example: the block will only be listed if the path is /contact or /node/17.</p>
+
+<img src="demo-image/88-2.PNG">
+<br/><br/>
+<h2><a>Views</a></h2>
+<br/><br/>
+<img src="demo-image/88-5.png">
+
+<br/><br/>
+<h2>Theme Settings</h2><br/>
+<p>The theme settings form an integral part of the Enigma framework. To access the theme settings, navigate to Appearence > Settings -> Enigma (enma).</p>
+<br/><br/>
+
+
+<HR/>
+<h2><a>Customer Support</a></h2><br/>
+<h3>Support Policy</h3>
+<p>We are ready to assist you via email: <a href="mailto: drupalet022@gmail.com">drupalet022@gmail.com</a> - Forums: <a href="http://support.drupalet.com/" target="_blank">http://support.drupalet.com/</a></p>
+
+<h3>Customization Requests</h3>
+<p>All theme modifications which alter or built upon the original theme functionality are considered extra customizations and are not covered by Theme Boutique's support policy. If you would like to request a quote for paid customizations, please contact us through our author profile page and we will respond to your query within 48 hours.</p>
+<br/><br/>
+<h2><a>Thanks!!!!</a></h2>
+<p>Thank you very much for using our products.</p>
+<p>If you are satisfied with this product, please don’t forget to rate it <img src="http://freedesigns.me/wp/banner/newhost/star.png" style="border:none"><img src="http://freedesigns.me/wp/banner/newhost/star.png" style="border:none"><img src="http://freedesigns.me/wp/banner/newhost/star.png" style="border:none"><img src="http://freedesigns.me/wp/banner/newhost/star.png" style="border:none"><img src="http://freedesigns.me/wp/banner/newhost/star.png" style="border:none">.</p>
+
+<p>Your rating is inspires us for future update and better support.</p>
+<p>Have a good day!</p>
+	</div>
+	<!--/row-->
+	<hr>
+	
+</div>
+</div>
+<!--/.fluid-container-->
+<!-- Le javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.tocify.min.js"></script>
+<script src="js/prettify.js"></script>
+<script src="js/githubrepo.js"></script>
+<script>
+        $(function() {
+
+            $("#toc").tocify({ selectors: "h2, h3, h4", scrollTo: 60, highlightOffset: 60, extendPage: true });
+
+            prettyPrint();
+
+            $(".optionName").popover({ trigger: "hover" });
+
+            $("a[href='#']").click(function(event) {
+ 
+                event.preventDefault();
+
+            });
+
+        });
+    </script>
+</body>
+</html>

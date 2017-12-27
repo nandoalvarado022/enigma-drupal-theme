@@ -1,0 +1,93 @@
+;Theme info
+name = Enma
+description = Enma ready for use Industries, School, hospital, corporative, travel, fashion, jewellery and any business.
+package = Core
+version = VERSION
+core = 7.x
+screenshot = 'screenshot.png'
+
+; Add a style sheet
+stylesheets[all][] = css/bootstrap.min.css
+stylesheets[all][] = css/lightbox.min.css
+stylesheets[all][] = css/stroke-gap-icons.css
+stylesheets[all][] = css/elegant-icons.css
+stylesheets[all][] = css/font-awesome.css
+stylesheets[all][] = css/owl.carousel.css
+stylesheets[all][] = css/flexslider.css
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/responsive.css
+stylesheets[all][] = css/spacings.css
+stylesheets[all][] = css/animate.css
+
+stylesheets[all][] = css/update.css
+
+
+; Add a script
+
+scripts[] = js/jquery.min.js
+scripts[] = js/bootstrap.min.js
+scripts[] = js/lightbox.min.js
+scripts[] = js/owl.carousel.min.js
+scripts[] = js/jquery.countTo.js
+scripts[] = js/jquery.appear.js
+scripts[] = js/isotope.pkgd.min.js
+scripts[] = js/jquery.localScroll.min.js
+scripts[] = js/jquery.scrollTo.min.js
+scripts[] = js/jquery.flexslider-min.js
+scripts[] = js/jquery.simple-text-rotator.min.js
+scripts[] = js/jquery.easing.min.js
+scripts[] = js/jquery.easypiechart.min.js
+scripts[] = js/imagesloaded.pkgd.min.js
+scripts[] = js/jquery.fitvids.js
+scripts[] = js/wow.min.js
+scripts[] = js/jquery.backgroundvideo.min.js
+scripts[] = js/gmap3.min.js
+scripts[] = js/scripts.js
+scripts[] = js/update.js
+
+
+
+;Core regions
+
+
+regions[header_social] = 'Header social'
+regions[main_menu] = 'Main menu'
+regions[mini_menu] = 'Mini Menu'
+regions[blog_menu] = 'Blog Menu'
+regions[content] = 'Main Content'
+regions[section_content] = 'Section content'
+regions[pages_bottom] = 'Page bottom'
+regions[blog_small_image] = 'Blog small image'
+regions[sidebar] = 'Sidebar'
+regions[related_portfolio] = 'Related portfolio'
+regions[footer] = 'Footer style 1'
+regions[footer2] = 'Footer style 2'
+regions[footer4] = 'Footer style 4'
+regions[bottom_right] = 'Bottom right'
+
+
+regions[highlighted] = 'highlighted '
+
+
+
+;Features (core settings)
+features[] = 'logo'
+features[] = 'name'
+
+features[] = 'slogan'
+features[] = 'node_user_picture'
+features[] = 'comment_user_picture'
+features[] = 'comment_user_verification'
+features[] = 'favicon'
+features[] = 'go_to_top_button'
+features[] = 'secondary_menu'
+
+;Breadcrumb
+settings[breadcrumb_display] = 'yes'
+settings[breadcrumb_separator] = ' &#187; '
+settings[breadcrumb_home] = 1
+
+
+version = "7.x"
+project = "Enma"
+datestamp = "1365027012"
