@@ -326,7 +326,7 @@ p {
   -o-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  height: 66px;
+  height: 100px;
 }
 
 .logo-wrap.shrink img {
