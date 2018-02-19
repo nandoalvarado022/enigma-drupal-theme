@@ -24,7 +24,7 @@
                         <div class="logo-container">
                             <div class="logo-wrap local-scroll">
                                 <a href="<?php print $base_url; ?>">
-                                <img class="logo" src="<?php print base_path().path_to_theme(); ?>/logo_light.png" alt="logo">
+                                <img class="logo" src="images/logo-drupal.png" alt="logo">
                                 </a>
                             </div>
                         </div>
@@ -44,14 +44,19 @@
             </div>
             <!-- end container -->
         </div>
-        <!-- end navigation -->
+        <!-- end navigation nand -->
     </nav>
     <!-- end navbar -->
 </header>
 <!-- end navigation -->
 <div class="main-wrapper-onepage main oh">
     <!-- Page Title -->
-    <section class="page-title text-center" style="background-image: url(<?php print $page_title_bg; ?>);">
+    <?php // print "<pre>"; print_r($node->field_image["und"][0]["uri"]); 
+    // $page_title_bg = file_create_url(file_load($page_title_background)->uri);
+    $image_uri=$node->field_image["und"][0]["uri"];
+    $image_article=file_create_url($image_uri);
+    ?>
+    <section class="page-title text-center" style="background-image: url(<?php print $image_article; ?>);">
         <div class="container relative clearfix">
             <div class="title-holder">
                 <div class="title-text">

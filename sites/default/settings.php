@@ -217,10 +217,10 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'u322517513_enigm',
-      'username' => 'u322517513_enigm',
-      'password' => 'nandito2007',
-      'host' => 'mysql.hostinger.co',
+      'database' => 'enigma',
+      'username' => 'root',
+      'password' => '',
+      'host' => 'localhost',
       'port' => '',
       'driver' => 'mysql',
       'prefix' => '',
@@ -272,7 +272,7 @@ $drupal_hash_salt = 'rxqXb4_6yvoLAJxjBdKi5qsYc8hd6EtlTJe9FqhwNXU';
  * See the .htaccess file for more information.
  *
  * Examples:
- *   $base_url = 'http://www.example.com';
+ *   $base_url = 'http://www.example.com'; 
  *   $base_url = 'http://www.example.com:8888';
  *   $base_url = 'http://www.example.com/drupal';
  *   $base_url = 'https://www.example.com:8888/drupal';

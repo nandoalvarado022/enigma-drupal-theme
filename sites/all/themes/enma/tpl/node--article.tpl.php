@@ -127,7 +127,17 @@
 				<div class="col-sm-12 blog-content">
 					<div class="entry-item">
 					    <div class="entry-img">
-					        <?php print theme('image', array('path' => $imageone, 'style_name' => 'image_750x420', 'alt' => $alt));?>
+							<?php 
+							print render($content['field_embedded_video']);
+							// echo 
+							/* $video_youtube=$node->field_embedded_video["und"][0]["video_url"];
+							if($video_youtube) print {?>
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/<?php print $video_youtube?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+								<?php
+							}
+							*/
+							// print "<pre>"; print_r($node->field_embedded_video["und"][0]["video_url"]);
+							// print theme('image', array('path' => $imageone, 'style_name' => 'image_750x420', 'alt' => $alt));?>
 					    </div>
 					    <div class="row">
 					        <div class="col-sm-10 col-sm-offset-1">
@@ -193,5 +203,5 @@
 		</div>
 	</section><!-- end blog single -->
 	<!-- Comments -->
-	<?php print render($content['comments']); ?>
+	<?php // print render($content['comments']); ?>
 	<?php } ?>

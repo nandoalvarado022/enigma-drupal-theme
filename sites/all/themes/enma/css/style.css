@@ -321,6 +321,8 @@ p {
 }
 
 .logo-wrap img {
+  padding: 10px;
+  background: white;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -1596,6 +1598,7 @@ textarea:focus {
   background-attachment: fixed !important;
   background-repeat: no-repeat;
   background-position: 50% 0;
+  background-size: 100%;
   display: block;
 }
 
@@ -3953,4 +3956,9 @@ ol.numbers {
 
 .sidenav .works-grid-3-col-wide .container-fluid {
   padding: 0 15px;
+}
+
+.embedded-video iframe{
+  margin: 0 auto;
+  display: block;
 }
