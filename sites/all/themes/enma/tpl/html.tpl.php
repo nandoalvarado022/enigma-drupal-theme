@@ -12,7 +12,15 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-		<?php print $styles; ?><?php print $head; ?>
+		<?php print $styles; ?>
+		<?php print $head; ?>
+		<link rel="stylesheet" href="/css/estilos.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- livereload -->
+		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+		<!-- livereload -->
+
 
 		<?php
 
